@@ -1,83 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <title>Основная страница</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <table cellspacing="15">
-      <tr>
-        <td>
-          <img src="919827.png" width="200" alt="Картинка" />
-        </td>
-        <td>
+    <div class="conteiner">
+      <div class="info">
+        <img src="919827.png" alt="Картинка" class="img" />
+        <div class="info-grp">
           <h1>Инфо</h1>
           <p>просто <em>курсив</em> <strong>жирный</strong></p>
           <p>Строка 2</p>
-        </td>
-      </tr>
-    </table>
-    <hr />
 
-    <h2><strong>Ссылки</strong></h2>
+          <h4><strong>Ссылки</strong></h4>
+          <a href="https://www.google.com/" target="_blank">ссылка 1</a>
+          |
+          <a href="https://byxatab.com/" target="_blank">два</a>
+        </div>
+      </div>
 
-    <ul>
-      <li><a href="https://www.google.com/" target="_blank">ссылка 1</a></li>
-      <li><a href="https://www.google.com/" target="_blank">два</a></li>
-    </ul>
-    <hr />
+      <div class="card bg-yelloy">
+        <h2>Список</h2>
+        <ol class="list">
+          <li>один</li>
+          <li>два</li>
+          <li>три</li>
+        </ol>
+      </div>
 
-    <h2>Список</h2>
-    <ol>
-      <li>один</li>
-      <li>два</li>
-      <li>три</li>
-    </ol>
-    <hr />
+      <div class="card bg-green">
+        <h2>Таблица</h2>
+        <table class="tbl">
+          <tr>
+            <th>Строка</th>
+            <th>Описание</th>
+            <th>Номер</th>
+          </tr>
+          <tr>
+            <td>Строка 1</td>
+            <td>Описание 1</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>Строка 2</td>
+            <td>Описание 2</td>
+            <td>245</td>
+          </tr>
+        </table>
+      </div>
 
-    <h2>Таблица</h2>
-    <table>
-      <tr>
-        <th>Строка</th>
-        <th>Описание</th>
-        <th>Номер</th>
-      </tr>
-      <tr>
-        <td>Строка 1</td>
-        <td>Описание 1</td>
-        <td>25</td>
-      </tr>
-      <tr>
-        <td>Строка 2</td>
-        <td>Описание 2</td>
-        <td>245</td>
-      </tr>
-    </table>
-    <hr />
+      <div class="card bg-red">
+        <h2>Источник</h2>
+        <ul class="link-list">
+          <li>
+            <a href="st2.html" target="_blank">Сайт</a>
+          </li>
+        </ul>
+      </div>
 
-    <h2>Источник</h2>
-    <a href="st2.html" target="_blank">Сайт</a>
-    <hr />
+      <div class="contact">
+        <h2>Сообщение</h2>
 
-    <h2>Сообщение</h2>
+        <form action="/">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Имя:</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Введите имя"
+                autocomplete="off"
+              />
+            </div>
 
-    <form action="/">
-      <label for="name">Имя:</label>
-      <input type="text" id="name" placeholder="Введите имя" />
-      <br />
+            <div class="form-group">
+              <label for="email">email:</label>
+              <input type="text" id="email" placeholder="Введите email" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="text">Описание:</label>
+            <textarea id="text" cols="15" rows="2"></textarea>
+          </div>
 
-      <label for="email">email:</label>
-      <input type="text" id="name" placeholder="Введите email" />
-      <br />
+          <input class="btn" type="submit" value="Принять" />
+        </form>
+      </div>
+      <div class="position">
+        <div class="box"></div>
+      </div>
+    </div>
 
-      <label for="text">Описание:</label>
-      <br />
-      <textarea id="text" cols="15" rows="2"></textarea>
-      <br />
-
-      <input type="submit" value="Принять" />
-    </form>
-    <hr />
+    <div style="padding-bottom: 500px"></div>
   </body>
 </html>
